@@ -3,7 +3,7 @@ import fs from 'fs/promises'
 
 const cartsRouter = Router();
 const cartsFilePath = 'carrito.json';
-let nextCartId = 1;
+let nextCartId = 0;
 
 cartsRouter.post('/', async (req, res) => {
     const cart = {

@@ -3,7 +3,7 @@ import fs from 'fs/promises'
 
 const productsRouter = Router();
 const productsFilePath = 'productos.json';
-let nextProductId = 1;
+let nextProductId = 0;
 
 productsRouter.get('/', async (req, res) => {
   try {
